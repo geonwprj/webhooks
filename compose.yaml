@@ -13,9 +13,7 @@ services:
       - NODE_ENV=development
     command: sh -c "npm install && npm start"
     restart: unless-stopped
-    networks:
-      - cf-nw
-    network_mode: "cf-nw"
+    network_mode: "cf-nw"  # Only this line needed for networking
 
 volumes:
   node_modules:
