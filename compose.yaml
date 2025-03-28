@@ -15,12 +15,7 @@ services:
     restart: unless-stopped
     networks:
       - cf-nw
+    network_mode: "cf-nw"
 
 volumes:
   node_modules:
-
-networks:
-  cf-nw:
-    external: true
-    name: cf-nw
-    network_mode: "cf-nw"    
