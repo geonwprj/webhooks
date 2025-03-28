@@ -1,0 +1,28 @@
+{
+  "name": "webhooks",
+  "version": "1.0.0",
+  "description": "This project handles webhooks with a \"novels\" action that retrieves content from a specified URL and uploads it to a GitHub repository.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx ts-node test-novels.ts",
+    "start": "npx ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^22.13.14",
+    "dotenv": "^16.4.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.1.1",
+    "@types/express": "^5.0.1",
+    "axios": "^1.8.4",
+    "express": "^4.21.2"
+  }
+}
