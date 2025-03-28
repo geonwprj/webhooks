@@ -1,7 +1,7 @@
-import { Octokit } from '@octokit/rest';
 import axios from 'axios';
 
 export async function handleNovelsAction(params: any) {
+  const { Octokit } = await import('@octokit/rest');
   const { url, filepath } = params;
   const response = await axios.get(url);
   const content = response.data;
