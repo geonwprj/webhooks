@@ -14,12 +14,12 @@ services:
     command: sh -c "npm install && npm start"
     restart: unless-stopped
     networks:
-      - cf-nw
+      - cfnw
 
 volumes:
   node_modules:
 
 networks:
-  cf-nw:
+  cfnw:
     external: true
-    name: cf-nw  # Must match existing network name exactly
+    name: cfnw  # Must match existing network name exactly
